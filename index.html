@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="header">
+          <div id="close-menu" class="close-menu-icon">
+            <img src="./images/icon-close-menu.svg"  onclick ="closeMenu()" alt="close"> 
+          </div>
+          <div class="header-firstHalf">
+            <div class="main-menuLinks">
+              <ul>
+                <li class="featuremenu-Link" onclick ="toggleFeatureMenu('menuLinks-featuredropdown')">Features<span><img src="./images/icon-arrow-down.svg" alt=""></span>
+                  <ul class="menuLinks-featuredropdown">
+                    <li><span><img src="./images/icon-todo.svg"></span><span class="items">Todo List</span></li>
+                    <li><span><img src="./images/icon-calendar.svg"></span><span class="items">Calenders</span></li>
+                    <li><span><img src="./images/icon-reminders.svg"></span><span class="items">Reminders</span></li>
+                    <li><span><img src="./images/icon-planning.svg"></span><span class="items">Planning</span></li>
+                  </ul>
+                </li>
+                <li class="companymenu-link" onclick ="toggleFeatureMenu('menuLinks-companydropdown')" >Company<span></span><img src="./images/icon-arrow-down.svg" alt="">
+                  <ul class="menuLinks-companydropdown">
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Blog</li>
+                  </ul>
+                </li>
+                <li><a href="#" class="menu-PageLinks">Careers</a></li>
+                <li><a href="#" class="menu-PageLinks">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-secondHalf">
+            <ul>
+              <li><a href="#" class="myButton" id="loginButton">Login</a></li>
+              <li><a href="#" class="myButton">Register</a></li>
+            </ul>
+          </div>
+        </div>
+        <svg class="menu-icon" id="menu-icon-button" onclick ="toggleMenu()"  width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+      </div>
+    </header>
+    <section>
+      <div class="body-sectionContainer">
+         <div class="body-sectionTextContainer">
+            <h1>Make remote work</h1>
+            <p> Get your team in sync, no matter your location. Streamline processes, 
+              create team rituals, and watch productivity soar.</p>
+            <a href="#" class="myButton">Learn more</a>
+           <div class="product-container">
+            <ul>
+              <li><img src="./images/client-databiz.svg" alt="databiz"></li>
+              <li><img src="./images/client-audiophile.svg" alt="audiophile"></li>
+              <li><img src="./images/client-meet.svg" alt="meet"></li>
+              <li><img src="./images/client-maker.svg" alt="maker"></li>
+            </ul>
+           </div>
+         </div>
+         <div class="body-sectionImageContainer" >
+            <img src="./images/image-hero-desktop.png" class="desktop-hero" alt="hero-image">
+            <img src="./images/image-hero-mobile.png" class="mobile-hero" alt="her0-desktop">
+         </div>
+      </div>
+    </section>
+  </div>
+  <script src="./jsfile.js"></script>
+
+</body>
+</html>
